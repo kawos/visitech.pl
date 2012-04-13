@@ -1,0 +1,36 @@
+%footer
+  .glow
+    .container
+      .row
+        .span3
+          #jstwitter
+            %h3 Twitter Feed
+        .span3
+          %h3 Aktualności
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit nisl ac metus porta placerat. Donec semper consectetur neque eget hendrerit.
+            %a{:href => "http://www.littlesparkvt.com"} Read More>
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit nisl ac metus porta placerat. Donec semper consectetur neque eget hendrerit.
+            %a{:href => "http://www.littlesparkvt.com"} Read More>
+        .span3
+          %h3 Skontaktuj sie z nami!
+          %p Masz pytanie? Jesteśmy do Twojej dyspozycji
+          %br
+            przez telefon: 1-(555)-555-5555
+            %br
+              przez email:
+              %a{:href => "mailto:mesitekos@visitech.pl"} mesitekos@visitech.pl
+              %br
+                lub przez:
+                %a{:href => "/kontakt"} Stronę kontaktową
+        .span3
+          %h3 Newsletter
+          %p Subskrybuj nasz newsletter i bądź na bieżąco!
+          %form#subscribe-form{:action => "#", :method => "post"}
+            %input#email{:name => "email", :placeholder => "Twój adres email", :type => "text"}
+              %button.btn.btn-primary{:type => "submit"} Zapisz się
+
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+  %script{:src => '/bootstrap/bootstrap.min.js', :async => true, :type => 'text/javascript'}
+

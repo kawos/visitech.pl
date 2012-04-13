@@ -1,0 +1,42 @@
+.container
+  %header
+    %p.lead Lorem ipsum dolor sit amet anips.
+  %hr
+  
+#karuzela.row
+  .span10.columns.offset1
+    #myCarousel.carousel.shadow
+      / Carousel items
+      .carousel-inner
+        .active.item
+          %img{:alt => "", :src => "http://twitter.github.com/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg"}
+          .carousel-caption
+            %h4 First Thumbnail label
+            %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        .item …
+        .item …
+      / Carousel nav
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+  %hr
+  
+.row
+  %hr
+  
+  .span4
+    %h2 Usługi
+    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %p
+      %a.btn.btn-primary{:href => "/uslugi"} Więcej »
+  .span4
+    %h2 Katalog
+    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %p
+      %a.btn.btn-primary{:href => "/katalog"} Więcej »
+  .span4
+    %h2 Sklep
+    %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    %p
+      %a.btn.btn-primary{:href => "http://sklep.visitech.pl/"} Więcej »
+  %hr
+  

@@ -1,0 +1,18 @@
+      def display_menu_item(item, options = {})
+        if item.respond_to?(:each)
+          if (options[:levels] - 1) > 0
+            haml_tag :li, :class => "dropdown" do
+              haml_tag :a, :class => "dropdown-toggle" do
+                display_menu(item, :levels => (options[:levels] - 1), :class => "dropdown-menu")
+              end
+            end
+          end
+        else
+          html_class = current_item?(item) ? "active" : nil
+          haml_tag :li, :class => html_class do
+            haml_tag :a, :<, :href => url(item.abspath) do
+              haml_concat item.heading
+            end
+          end
+        end
+      end
